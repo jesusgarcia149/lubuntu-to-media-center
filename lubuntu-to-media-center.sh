@@ -21,7 +21,7 @@ touch pcmanfm.sh
 echo '!#/bin/bash; pcmanfm' > pcmanfm.sh
 
 touch kdeconnect.sh
-echo '!#/bin/bash; kdeconnect' > kdeconnect.sh
+echo '!#/bin/bash; kcmshell5 kcm_kdeconnect' > kdeconnect.sh
 
 # Le damos permiso a los archivos
 sudo chmod 777 ./kodi.sh ./retroarch.sh ./pcmanfm.sh ./kdeconnect.sh
@@ -65,4 +65,3 @@ sudo apt install retroarch -y
 
 # Intercambiar archivos de Android al PC
 sudo apt install kdeconnect -y
-
