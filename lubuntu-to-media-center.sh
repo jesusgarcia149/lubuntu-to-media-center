@@ -23,8 +23,20 @@ echo '!#/bin/bash; pcmanfm' > pcmanfm.sh
 touch kdeconnect.sh
 echo '!#/bin/bash; kcmshell5 kcm_kdeconnect' > kdeconnect.sh
 
+touch runner.sh
+echo '!#/bin/bash; pkill retroarch; pkill pcmanfm; pkill kodi; lxpanelctl run' > runner.sh
+
 # Le damos permiso a los archivos
-sudo chmod 777 ./kodi.sh ./retroarch.sh ./pcmanfm.sh ./kdeconnect.sh
+sudo chmod 777 ./kodi.sh ./retroarch.sh ./pcmanfm.sh ./kdeconnect.sh ./runner.sh
+
+
+# Surgerencias de atajos del teclado
+
+# Kodi > ALT + K
+# Retroarch > ALT + R
+# Explorador de Archivos > ALT + A
+# Kde-Connet > ALT + C
+# Lanzador > ALT + B (Por defecto es ALT + F2)
 
 
 # Iniciamos kodi con el sistema
@@ -32,6 +44,7 @@ sudo chmod 777 ./kodi.sh ./retroarch.sh ./pcmanfm.sh ./kdeconnect.sh
 
 # Añadir atajos al teclado
 # menu > Preferencias > Setup Hot Keys > Programs
+
 
 
 
