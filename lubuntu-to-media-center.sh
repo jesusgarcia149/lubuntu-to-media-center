@@ -27,6 +27,12 @@ echo '!#/bin/bash; kcmshell5 kcm_kdeconnect' > kdeconnect.sh
 sudo chmod 777 ./kodi.sh ./retroarch.sh ./pcmanfm.sh ./kdeconnect.sh
 
 
+# Iniciamos kodi con el sistema
+# menu > Preferencias > Aplicaciones predeterminadas para LXSession > Inicio automatico > Aplicaciones autoiniciadas manuales
+
+# Añadir atajos al teclado
+# menu > Preferencias > Setup Hot Keys > Programs
+
 
 
 # Actualizar repositorios
