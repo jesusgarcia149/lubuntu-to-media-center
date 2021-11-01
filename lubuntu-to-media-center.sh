@@ -99,4 +99,4 @@ cd
 
 
 # Eliminar el Entorno de Escritorio lxde
-# Sudo apt-get --purge autoremove lubuntu-desktop -y
+# sudo apt-get --purge autoremove lubuntu-desktop -y
