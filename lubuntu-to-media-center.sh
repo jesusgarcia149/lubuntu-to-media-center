@@ -98,9 +98,9 @@ cd
 
 
 
-# Atajos del teclao
+# Atajos del teclado
 
-# Abrir la Terminal > CTRL + ALT + F1
+# Abrir la Terminal (debemos identificarnos primero) > CTRL + ALT + F1
 # Volver a la Interfaz Grafica > CTRL + ALT + F7
 
 
