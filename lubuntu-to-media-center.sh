@@ -98,6 +98,14 @@ cd
 
 
 
+# Atajos del teclao
+
+# Abrir la Terminal > CTRL + ALT + F1
+# Volver a la Interfaz Grafica > CTRL + ALT + F7
+
+
+
+
 # Eliminar el Entorno de Escritorio lxde
 # sudo apt-get remove lubuntu* -y
 # sudo apt-get autoremove --purge -y
