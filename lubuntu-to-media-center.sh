@@ -11,7 +11,76 @@ sudo add-apt-repository ppa:team-xbmc/ppa -y
 sudo apt update
 sudo apt install kodi -y
 
+
+
+
 # Kodi config
+
+
+# Añadir Retroarch al Menu Principal de Kodi
+# Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
+
+# Reemplazar
+#<item>
+#    <label>$LOCALIZE[342]</label>
+#    <onclick condition="Library.HasContent(movies) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
+#    <onclick condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+#    <onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
+#    <property name="menu_id">$NUMBER[5000]</property>
+#    <thumb>icons/sidemenu/movies.png</thumb>
+#    <property name="id">movies</property>
+#    <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+#</item>
+
+# Por
+#<item>
+#    <label>Retroarch</label>
+#    <onclick>System.Exec(retroarch)</onclick>
+#</item>
+#<item>
+#    <label>$LOCALIZE[342]</label>
+#    <onclick condition="Library.HasContent(movies) + Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/,return)</onclick>
+#    <onclick condition="Library.HasContent(movies) + !Skin.HasSetting(home_no_categories_widget)">ActivateWindow(Videos,videodb://movies/titles/,return)</onclick>
+#    <onclick condition="!Library.HasContent(movies)">ActivateWindow(Videos,sources://video/,return)</onclick>
+#    <property name="menu_id">$NUMBER[5000]</property>
+#    <thumb>icons/sidemenu/movies.png</thumb>
+#    <property name="id">movies</property>
+#    <visible>!Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+#</item>
+
+
+
+
+# Comandos
+
+# Creamos los Comandos para cambiar de Programas
+cd
+mkdir Comands
+cd Comands
+# Creamos Comando para cerrar Kodi y abrir Retroarch
+touch switch-to-retroarch.sh
+echo '#! /bin/bash; pkill kodi; retroarch' > switch-to-retroarch.sh
+# Creamos Comando para cerrar Retroarch y abrir Kodi
+touch switch-to-kodi.sh
+echo '#! /bin/bash; pkill retroarch; kodi' > switch-to-kodi.sh
+# Les damos permisos de ejecucion
+sudo chmod 777 ./switch-to-retroarch.sh ./switch-to-kodi.sh
+
+
+# Comando en Windows para cerrar Kodi y abrir Retroarch
+# Kodi
+# Ubicacion:
+# C:\Program Files\Kodi\addons\skin.estuary\xml\Home.xml
+# Linea:
+# <onclick>System.Exec(C:\Comands\switch-to-retroarch.bat)</onclick>
+# Contenido del switch-to-retroarch.bat
+# @echo off
+# taskkill /F /IM kodi.exe
+# retroarch
+# exit
+
+
+
 
 # Addons
 
@@ -61,7 +130,7 @@ sudo apt-get autoremove --purge -y
 
 
 # Reiniciamos
-reboot
+# reboot
 
 
 
