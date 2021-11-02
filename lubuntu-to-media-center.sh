@@ -62,5 +62,11 @@ echo 'kodi' > autostart
 
 
 # Eliminar el Entorno de Escritorio lxde
-# sudo apt-get remove lubuntu* -y
-# sudo apt-get autoremove --purge -y
+sudo apt-get remove lubuntu* -y
+sudo apt-get autoremove --purge -y
+
+
+
+
+# Reiniciamos
+reboot
