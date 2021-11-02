@@ -66,9 +66,6 @@ reboot
 
 
 
-
-
-
 # Atajos del teclado
 
 # Abrir la Terminal (debemos identificarnos primero) > CTRL + ALT + F1
