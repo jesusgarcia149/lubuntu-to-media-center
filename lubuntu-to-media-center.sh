@@ -34,7 +34,7 @@ sudo chmod 777 ./switch-to-retroarch.sh ./switch-to-kodi.sh
 
 
 # Añadir Retroarch al Menu Principal de Kodi
-# Archivo a Modificar ~/.kodi/addons/skin.estuary/xml/Home.xml
+# Archivo a Modificar /usr/share/kodi/addons/skin.estuary/xml/Home.xml
 
 # Reemplazar
 #<item>
