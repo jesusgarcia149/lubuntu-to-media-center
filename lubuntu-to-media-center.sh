@@ -51,7 +51,7 @@ sudo chmod 777 ./switch-to-retroarch.sh ./switch-to-kodi.sh
 # Por
 #<item>
 #    <label>Retroarch</label>
-#    <onclick>System.Exec(...\switch-to-retroarch.sh)</onclick>
+#    <onclick>XBMC.RunScript('...\switch-to-retroarch.sh')</onclick>
 #</item>
 #<item>
 #    <label>$LOCALIZE[342]</label>
