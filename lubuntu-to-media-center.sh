@@ -16,6 +16,22 @@ sudo apt install kodi -y
 
 # Kodi config
 
+# Addons
+
+## Pluto TV
+### Repositorio: Repositorios Oficiales
+#### instalacion: addons de videos > Pluto TV
+
+## Konectas > Balandro
+### Repositorio: http://konectas.es/repo/
+#### instalacion: %Nombre_de_la_fuente% > ADDONS CON REPOSITORIO > BALANDRO > repository.balandro-1.0.3.zip
+
+## Youtube (Sin API)
+## Addond Cristal Azul
+## url: https://mundokodi.com/addon-cristal-azul-en-kodi/
+### Repositorio: https://fuentekodileia.github.io/
+#### instalacion: %Nombre_de_la_fuente% > addons-todo-en-uno > plugin.video.cristalazul-x.x.x.zip
+
 
 
 
